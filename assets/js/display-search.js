@@ -86,3 +86,20 @@ function searchApi(query, format) {
         });
 }
 
+function handleSearchFormSubmit(event) {
+    event.preventDefault();
+
+    let searchInputVal = document.querySelector('#search-input').value.trim();
+    let formatInputVal = document.querySelector('#format-input').value.trim();
+
+    if (!searchInputVal) {
+        console.error('You need a search input value!');
+        return;
+    }
+
+    searchApi(searchInputVal, formatInputVal);
+}
+
+searchFormEl.addEventListener('submit', handleSearchFormSubmit);
+
+getParams();
