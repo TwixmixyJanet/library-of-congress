@@ -1,6 +1,13 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
+:root {
+    --lightgrey: #7e7b99;
+    --charcoal: #121119;
+    --black: #070512;
+    --lightpurple: #d9bcff;
+    --purple: #6b00ff;
+   }
 /**
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
@@ -880,7 +887,7 @@
   }
   
   .text-primary {
-    color: #2d3e50 !important;
+    color: var(--purple);
   }
   
   .text-info {
@@ -892,11 +899,11 @@
   }
   
   .text-default {
-    color: #aeaeae !important;
+    color: var(--lightpurple);
   }
   
   .text-light {
-    color: #d9e9e8 !important;
+    color: var(--lightpurple);
   }
   
   .text-dark {
@@ -912,12 +919,12 @@
   }
   
   .text-link {
-    color: #1b89bc !important;
+    background-color: var(--purple);
   }
   
   /* BACKGROUND UTILS */
   .bg-primary {
-    background-color: #2d3e50 !important;
+    background-color: var(--purple);
   }
   
   .bg-info {
@@ -929,7 +936,7 @@
   }
   
   .bg-light {
-    background-color: #d9e9e8 !important;
+    background-color: var(--lightpurple);
   }
   
   .bg-dark {
@@ -1009,12 +1016,12 @@
   }
   
   .btn.btn-primary {
-    background-color: #2d3e50;
+    background-color: var(--charcoal);
     color: #d9e9e8;
   }
   
   .btn.btn-primary:hover {
-    background-color: #57779a;
+    background-color: var(--lightgrey);
   }
   
   .btn.btn-danger {
@@ -1027,12 +1034,12 @@
   }
   
   .btn.btn-info {
-    background-color: #1bbc9b;
+    background-color: var(--purple);
     color: #ffffff;
   }
   
   .btn.btn-info:hover {
-    background-color: #31e1bd;
+    background-color: var(--purple);
   }
   
   .btn.btn-light {
@@ -1072,12 +1079,12 @@
   }
   
   .btn.btn-link {
-    background-color: #1b89bc;
+    background-color: var(--purple);
     color: #ffffff;
   }
   
   .btn.btn-link:hover {
-    background-color: #31a9e1;
+    background-color: var(--purple);
   }
   
   .card {
@@ -1087,8 +1094,8 @@
   
   .card .card-header {
     padding: 0.375rem;
-    background-color: #2d3e50;
-    color: #d9e9e8;
+    background-color: var(--purple);
+    color: var(--lightgrey);
   }
   
   .card .card-body {
@@ -1142,8 +1149,8 @@
   form .form-input {
     width: 100%;
     padding: 0.75rem;
-    color: #1a1a1a;
-    background-color: #ffffff;
+    color: var(--black);
+    background-color: var(--lightpurple);
     margin: 0.625rem 0;
     font-size: 1.2rem;
     border: 1px solid #484848;
