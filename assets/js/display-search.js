@@ -59,7 +59,7 @@ function searchApi(query, format) {
     locQueryUrl = `${locQueryUrl}&q=${query}`;
 
     fetch(locQueryUrl)
-        .then(function (repsonse) {
+        .then(function (response) {
             if (!response.ok) {
                 throw response.json();
             }
